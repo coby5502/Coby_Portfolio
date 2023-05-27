@@ -6,38 +6,90 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" type="text/css">
-    <title>Coby's World</title>
+    <title>Coby's Portfolio</title>
 </head>
 
 <body>
     <!-- Navigation bar -->
     <header class="header">
         <!-- Logo -->
-        <a href="#" class="logo">Coby's World</a>
+        <a href="#" class="logo">Coby's Portfolio</a>
         <!-- Hamburger icon -->
         <input class="side-menu" type="checkbox" id="side-menu" />
         <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
         <!-- Menu -->
         <nav class="nav">
             <ul class="menu">
-                <li><a href="#">Career</a></li>
-                <li><a href="#">Project</a> </li>
-                <li><a href="#">Instargram</a></li>
+                <li><a href="#career">Career</a></li>
+                <li><a href="#project">Project</a> </li>
+                <li><a href="#">Instagram</a></li>
                 <li><a href="#">Soundcloud</a></li>
             </ul>
         </nav>
     </header>
     <!-- Main content -->
-    <main>
-        <article>
-            <h1>
-                Some content
-            </h1>
-            <p>
-                More Content
+    <section id="career">
+        <h2>Career</h2>
+        <div class="info-box">
+            <img src="images/profile.jpg" class="img" />
+            <p class="text">
+                핀테크 스타트업에서의 웹과 앱 서비스 기획/개발/배포 경험이 있습니다. 기획적으로 잘 풀어내어 불필요한 개발을 줄이고, 서비스에 필요한 개발 역량은 직접 쌓으면서 성공적으로 개발을 착수해왔습니다. 끊임없이 회고를 하며, 다음 단계로 나아가기 위해 항상 고민하였습니다.
+                <br/><br/>Apple Developer Academy를 수료한 이후, 일상에서 느낀 경험과 저의 이야기를 담은 iOS 앱을 만들어왔습니다. 서비스를 처음부터 끝까지 설계하고, 유저들의 반응을 체크하여 업데이트하는 경험을 쌓았습니다. 유저들이 서비스를 통해 즐거움을 느끼고 공감하는 것을 중요하게 생각합니다.
             </p>
-        </article>
-    </main>
+        </div>
+
+        <div class="flex-box">
+            <div>
+                <h3>경력</h3>
+                <p>
+                    파라(개발팀장)   2021.10 - 2022.05 <br/>
+                    • 사회초년생을 위한 할부 결제 서비스 <br/>
+                    • React-Native로 iOS/Android 동시 개발 <br/>
+                    • AWS Amplify 활용 벡엔드 구축 <br/>
+                    • 카카오페이 정기결제 구현 <br/>
+                </p>
+                <br/>
+            </div>
+            <div>
+                <h3>학력</h3>
+                <p>
+                    부산대학교 컴퓨터공학/핀테크융합 전공
+                </p>
+                <br/>
+                <h3>기타</h3>
+                <p>
+                    Apple Developer Academy @POSTECH
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="project">
+        <h2>Project</h2>
+        <div class="flex-box">
+            <div class="card">
+                <img src="images/profile.jpg" alt="Avatar" style="width:100%">
+                <div class="container">
+                    <h4><b>John Doe</b></h4>
+                    <p>Architect & Engineer</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/profile.jpg" alt="Avatar" style="width:100%">
+                <div class="container">
+                    <h4><b>John Doe</b></h4>
+                    <p>Architect & Engineer</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/profile.jpg" alt="Avatar" style="width:100%">
+                <div class="container">
+                    <h4><b>John Doe</b></h4>
+                    <p>Architect & Engineer</p>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>
