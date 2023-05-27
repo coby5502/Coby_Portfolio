@@ -189,7 +189,7 @@ section {
     display: flex;
 	flex-direction: row;
     justify-content: space-around;
-    padding: 10px 0;
+    gap: 10px;
 }
 
 /* Responsive layout - makes a one column layout instead of a two-column layout */
@@ -210,7 +210,6 @@ section {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     border-radius: 5px; /* 5px rounded corners */
-    margin: 0 10px;
 }
   
 /* On mouse-over, add a deeper shadow */
@@ -228,9 +227,11 @@ img {
     border-radius: 5px 5px 0 0;
 }
 
-/* Responsive layout - makes a one column layout instead of a two-column layout */
-@media (max-width: 800px) {
-    .card {
-        margin: 10px 0px;
-    }
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.photo {
+    flex-basis: 20%;
 }
