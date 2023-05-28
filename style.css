@@ -236,7 +236,7 @@ section:nth-child(even) {
   
 /* Add some padding inside the card container */
 .card > div {
-    padding: 2px 16px;
+    padding: 12px 16px;
 }
 
 /* Add rounded corners to the top left and the top right corner of the image */
