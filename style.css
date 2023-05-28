@@ -206,25 +206,6 @@ p {
     gap: 20px;
 }
 
-/* Responsive layout - makes a one column layout instead of a two-column layout */
-@media (max-width: 768px) {
-    .info-box {
-        flex-direction: column;
-        align-items: center;
-    }
-    .info-box > .img {
-        max-width: 300px;
-        max-height: 300px;
-        margin: 0 0 20px 0;
-    }
-    .flex-box {
-        flex-direction: column;
-    }
-    .info-box > .text {
-        padding: 10px 0;
-    }
-}
-
 .card {
 /* Add shadows to create the "card" effect */
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -250,9 +231,32 @@ p {
 
 .gallery {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 .photo {
-    width: 200px;
+    max-width: 25%;
+}
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 768px) {
+    .info-box {
+        flex-direction: column;
+        align-items: center;
+    }
+    .info-box > .img {
+        max-width: 300px;
+        max-height: 300px;
+        margin: 0 0 20px 0;
+    }
+    .flex-box {
+        flex-direction: column;
+    }
+    .info-box > .text {
+        padding: 10px 0;
+    }
+    .photo {
+        max-width: 50%;
+    }
 }
